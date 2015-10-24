@@ -2,14 +2,14 @@ shinyUI(
       pageWithSidebar(
             # My Simple Shiny App for Data Products Course Project in Coursera
             headerPanel(
-                  h1("Predicting Flower Species"),
+                  h1("Predicting Iris Species"),
             ),
             
             sidebarPanel(
                   h5("Welcome! This app tells you what species of iris your flower belongs to based on its sepal 
                         and petal dimensions. Simply drag the sliders to the appropriate numbers (in cm), 
                         press the Predict button, and the app will predict what species of iris you have - 
-                        setosa, virginica and versicolor."),
+                        setosa, virginica or versicolor."),
                   sliderInput("s.length",
                               "Sepal Length (in cm):",
                               min = 4.0,  max = 8.0, value = 4.0, step = 0.1),
