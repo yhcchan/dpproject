@@ -1,6 +1,7 @@
 library(shiny)
 library(caret)
 library(rpart)
+library(e1071)
 
 modelfit <- train(Species~., data = iris, method = "rpart")
 t <- data.frame(Sepal.Length = double(0), 
